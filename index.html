@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Menu App | Prodigy Infotech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->R
+    <nav id="navbar">
+        <div class="logo">🍽 Royal Hotel</div>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="cart">🛒 Cart (<span id="cart-count">0</span>)</li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <h1>Welcome to Royal Hotel</h1>
+        <p>Delicious food served with love</p>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="section">
+        <h2>Our Menu</h2>
+
+        <div class="food-grid">
+            <div class="food-card">
+                <img src="images/pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>₹299</p>
+                <button onclick="addToCart('Pizza')">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="images/burger.jpg" alt="Burger">
+                <h3>Burger</h3>
+                <p>₹199</p>
+                <button onclick="addToCart('Burger')">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="images/pasta.jpg" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>₹249</p>
+                <button onclick="addToCart('Pasta')">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="images/salad.jpg" alt="Salad">
+                <h3>Salad</h3>
+                <p>₹149</p>
+                <button onclick="addToCart('Salad')">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="images/thali.jpg" alt="Indian Thali">
+                <h3>Indian Thali</h3>
+                <p>₹349</p>
+                <button onclick="addToCart('Indian Thali')">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="images/dessert.jpg" alt="Dessert">
+                <h3>Dessert</h3>
+                <p>₹179</p>
+                <button onclick="addToCart('Dessert')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers -->
+    <section id="offers" class="section center-section">
+        <h2>🎉 Special Offers</h2>
+        <p>Flat <strong>20% OFF</strong> on all online orders</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section center-section">
+        <h2>📞 Contact Us</h2>
+        <p>Royal Hotel, Pune</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Email: royalhotel@gmail.com</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
